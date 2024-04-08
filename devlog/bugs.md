@@ -17,7 +17,7 @@ This is where you will keep track of all the bugs that you have found.
 
 Feel free to use this example as a template or create your own format for keeping track of bugs.
 
-## Bugs
+## Bug 1
 - **Description**: 'Todo' is declared but its value is never read. Module '"../shared/types"' has no exported member 'Todo'.ts(2305)
 - **Steps to Reproduce**: 'Todo' in the database interface is never declared.
 - **Expected Behavior**: It is unclear what functionality 'Todo' was intended for. 
@@ -25,11 +25,13 @@ Feel free to use this example as a template or create your own format for keepin
 - **Fix**: 'Todo' does not seem to be utilized so it can be safely removed.
 - **Date**: 03/30/2024
 
+## Bug 2
 - **Description**: Database does not follow Singleton Design Pattern
 - **File**: `src/modules/database/database.ts`
 - **Fix**: Changed the getInstance method to ensure only one instance of the database is used throughout the application  
 - **Date**: 03/30/2024
 
+## Bug 3
 - **Description**: GET, POST, PATCH, and DELETE Requests result in 404 Not Found Errors
 - **Steps to Reproduce**: Send GET, POST, PATCH, and DELETE Requests in Postman  
 - **Expected Behavior**: GET: 200 OK, POST: 201 Created or 400 Bad Request, PATCH: 204 No Content or 400 Bad Request, DELETE: 204 No Content
@@ -38,21 +40,25 @@ Feel free to use this example as a template or create your own format for keepin
 - **Fix**: Adjusted the HTTP Request parametes and modified `express.config.ts`to handle /password route correctly 
 - **Date**: 04/02/2024
 
+## Bug 4
 - **Description**: createPasswords is missing validation for 'website' in the request body and returning the incorrect value ('username') 
 - **File**: `src/modules/passwords/passwords.component.ts`
 - **Fix**: Added validation for 'website' and changed return value to 'id'
 - **Date**: 04/05/2024
 
+## Bug 5
 - **Description**: getPasswords does not validate for the id query parameter
 - **File**: `src/modules/database/database.ts`
 - **Fix**: Added validation for 'id' query parameter
 - **Date**: 04/05/2024
 
+## Bug 6
 - **Description**: updatePassword does not validate for any of the body requests
 - **File**: `src/modules/passwords/passwords.component.ts`
 - **Fix**: Added validation for body request
 - **Date**: 04/05/2024
 
+## Bug 7
 - **Description**: Incorrect HTTP Response (204 No Content) for deletePassword when 'id' parameter is absent 
 - **Expected Behavior**: Returns 404 Not Found Error
 - **File**: `src/modules/passwords/passwords.component.ts`
