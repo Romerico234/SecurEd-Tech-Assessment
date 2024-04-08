@@ -38,9 +38,6 @@ Then I tested for more issues and found the following:
 3. updatePassword is missing validation for all 3 body requests
 4. deletePassword does not validate for the id query parameter
 
-## **Day 5 (04/06/2024): Reflection**
-I was worried that there would have been a huge learning curve for me and if I could complete the assessment in the alloted time. But, I pulled through and I am content with what I have found and done. 
-
 
 
 
