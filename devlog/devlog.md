@@ -38,9 +38,6 @@ Then I tested for more issues and found the following:
 3. updatePassword is missing validation for all 3 body requests
 4. deletePassword does not validate for the id query parameter
 
-## **Day 5 (04/04/2024): Review**
-
-
 
 
 
