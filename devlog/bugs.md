@@ -91,8 +91,8 @@ Feel free to use this example as a template or create your own format for keepin
 ## Bug 9
 - **Description**: For any valid requests, `createPasswords()` is sending 200 OK Response 
 - **Steps to Reproduce**: Send a valid POST Requests
-- **Expected Behavior**: Returns 200 OK Response
-- **Actual Behavior**: Returns 201 Created
+- **Expected Behavior**: Returns 201 Created
+- **Actual Behavior**: Returns 200 OK Response
 - **File**: `src/modules/passwords/passwords.routehandler.ts`
 - **Fix**: Modified function in `passwords.routehandler.ts` to send 201 Created Response  
 - **Date**: 04/09/2024
