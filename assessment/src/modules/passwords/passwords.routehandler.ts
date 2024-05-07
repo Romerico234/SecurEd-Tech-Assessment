@@ -34,8 +34,7 @@ export class PasswordsRoutehandler {
 	) {
 		try {
 			const newPassword: Password = req.body;
-			PasswordManagerComponent.build().createPassword(newPassword);
-			res.status(201).json({ message: "Password created" });
+			res.status(201).json({ id: PasswordManagerComponent.build().createPassword(newPassword)});
 		} catch (error) {
 			next(error);
 		}
